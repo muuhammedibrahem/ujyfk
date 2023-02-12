@@ -1,0 +1,374 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Custom, iPhone Retina */
+@media (max-width: 485px) {
+  .container {
+    max-width: 450px;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+header {
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo img {
+  max-width: 80px;
+}
+header .container nav {
+}
+header .container nav ul {
+  display: flex;
+}
+header .container nav ul li {
+  padding: 60px 25px;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+/* End Header */
+/* Start Landing */
+.landing .info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.landing .info h2 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #333;
+}
+.landing .info span {
+  font-size: 68px;
+  color: #017143;
+  font-weight: bolder;
+}
+.landing .info p {
+  max-width: 560px;
+  line-height: 1.6;
+  color: #333;
+}
+.landing .info button {
+  background-color: #017143;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.landing .green {
+  height: 720px;
+  background-color: #017143;
+  clip-path: circle(50% at 95% 97%);
+}
+.landing .box1 {
+  position: relative;
+}
+.landing .box1 img {
+  position: absolute;
+  right: 190px;
+  bottom: 120px;
+  max-width: 340px;
+}
+.landing .box2 img {
+  position: absolute;
+  right: 190px;
+  bottom: 120px;
+  max-width: 340px;
+  display: none;
+}
+.landing .box3 img {
+  position: absolute;
+  right: 190px;
+  bottom: 120px;
+  max-width: 340px;
+  display: none;
+  transition: 0.3;
+}
+.options {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 105px;
+}
+.options .two {
+  margin: 0 90px;
+}
+.options img {
+  max-width: 60px;
+  position: absolute;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.icons i {
+  margin: 10px;
+}
+.icons ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  display: none;
+}
+#check {
+  z-index: 3;
+  position: fixed;
+  display: none;
+}
+/* End Landing */
+/* Start Responsive Design */
+/* Medium */
+@media (max-width: 991px) {
+  .landing .green {
+    position: relative;
+    top: 500px;
+    background-color: #017143;
+    clip-path: circle(40% at 50% 90%);
+  }
+  .landing .box1 img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -350px;
+    max-width: 250px;
+  }
+  .options {
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -400px;
+  }
+  .landing .info {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  .landing .info h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #333;
+  }
+  .landing .info span {
+    font-size: 63px;
+    color: #017143;
+    font-weight: bolder;
+  }
+  .landing .info p {
+    max-width: 80%;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .landing .info button {
+    background-color: #017143;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .options img {
+    max-width: 50px;
+    position: absolute;
+  }
+  .icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    background-color: #017143;
+  }
+  header .container nav ul {
+    display: none;
+  }
+  header .container .logo {
+    margin: 60px 0 0;
+    position: absolute;
+    top: -27px;
+  }
+  label {
+    display: block;
+    font-size: 30px;
+    margin: 60px 0 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  label .fa-xmark {
+    display: none;
+  }
+  #check:checked ~ header nav ul {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.857);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #check:checked ~ header nav ul a {
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  #check:checked ~ header nav ul a:hover {
+    color: #017143;
+  }
+  #check:checked ~ header label .fa-bars {
+    display: none;
+  }
+  #check:checked ~ header label .fa-xmark {
+    z-index: 2;
+    display: block;
+    position: relative;
+  }
+}
+
+/* Small */
+@media (max-width: 768px) {
+  .landing .green {
+    position: relative;
+    top: 500px;
+    background-color: #017143;
+    clip-path: circle(40% at 50% 90%);
+  }
+  .landing .box1 img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -350px;
+    max-width: 250px;
+  }
+  .options {
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -400px;
+  }
+  .options .two {
+    margin: 0 75px;
+  }
+  .options img {
+    max-width: 40px;
+    position: absolute;
+  }
+}
+@media (max-width: 485px) {
+  .landing .info span {
+    font-size: 36px;
+  }
+  .landing .info h2 {
+    font-size: 30px;
+  }
+  .landing .info button {
+    font-size: 9px;
+  }
+  .landing .info p {
+    font-size: 12px;
+  }
+  .landing .box1 img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 130px;
+    max-width: 200px;
+  }
+  .icons {
+    font-size: 10px;
+  }
+  .landing .info {
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 993px) and (max-width: 1189px) {
+  .landing .box1 img {
+    position: absolute;
+    right: 105px;
+    bottom: 120px;
+    max-width: 300px;
+  }
+  .icons {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    right: 25px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* End Responsive Design */
